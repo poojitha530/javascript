@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>finding discount percentage using JS</h2>
+    <script>
+
+        var sellingPrice=199;
+        var listingPRice=799;
+
+        var discountPercent= ((listingPRice - sellingPrice) / listingPRice )* 100;
+        console.log("Discount percentage is :"+ discountPercent);
+
+        displayDiscountPercentage=Math.round(discountPercent);
+        console.log(displayDiscountPercentage + " %off");
+
+        var result=listingPRice > sellingPrice;
+        console.log(typeof result);
+    </script>
+
+
+</body>
+</html>
